@@ -4,13 +4,15 @@ import { TabNavigator } from 'react-navigation'
 
 import ReactCourses from './src/components/ReactCourses'
 import ReactNativeCourses from './src/components/ReactNativeCourses'
+import GraphQLCourses from './src/components/GraphQLCourses'
 
 
 export default class App extends Component {
   render() {
     const MainNavigator = TabNavigator({
       ReactCourses: { screen: ReactCourses },
-      ReactNativeCourses : { screen: ReactNativeCourses }
+      ReactNativeCourses : { screen: ReactNativeCourses },
+      GraphQLCourses: { screen: GraphQLCourses}
     }, {
       tabBarPosition: 'bottom',
       tabBarOptions: {

@@ -16,18 +16,18 @@ const ds = new ListView.DataSource({
 })
 
 // Filter data to just select ReactCourses, will INCLUDE object in new array if the "test-function" returns TRUE
-const toInclude = new Set(['native'])
-const rnList = data.filter(obj => toInclude.has(obj.category))
+const toInclude = new Set(['graphql'])
+const gqlList = data.filter(obj => toInclude.has(obj.category))
 
 // our dataSource for ListView, if rowHasChanged will update dynamically
-const dataSource = ds.cloneWithRows(rnList)
+const dataSource = ds.cloneWithRows(gqlList)
 
 
-export default class ReactNativeCourses extends Component {
+export default class GraphQLCourses extends Component {
   static navigationOptions = {
-    tabBarLabel: 'React Native',
+    tabBarLabel: 'GraphQL',
     tabBarIcon: ({ tintColor }) => {
-      return <Icon name="tablet" type="entypo" size={20} color={tintColor} />;
+      return <Icon name="line-graph" type="entypo" size={20} color={tintColor} />;
     }
   }
 
@@ -64,7 +64,7 @@ export default class ReactNativeCourses extends Component {
           </Card>
         }
         renderHeader={() => (
-          <Text style={styles.header}>React Native Courses</Text>
+          <Text style={styles.header}>GraphQL Courses</Text>
         )}
       >
       </ListView>
