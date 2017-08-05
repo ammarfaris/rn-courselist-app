@@ -25,7 +25,7 @@ export default class App extends Component {
         },
         tabStyle: { height: 50 },
         indicatorStyle: { backgroundColor: 'white' },
-        style: { backgroundColor: Platform.OS === 'android' ? 'purple' : 'transparent' }
+        style: { backgroundColor: Platform.OS === 'android' ? 'grey' : 'transparent' }
       }
     })
 

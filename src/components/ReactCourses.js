@@ -4,7 +4,8 @@ import {
   Text,
   ListView,
   Image,
-  Linking
+  Linking,
+  View
 } from 'react-native'
 import { Card, Button, Icon } from 'react-native-elements'
 
@@ -52,6 +53,9 @@ export default class ReactCourses extends Component {
         renderRow={(rowData) =>
           <Card title={rowData.title}
                 image={{ uri: rowData.image }}>
+
+            <Text style={styles.author}>By {rowData.author}</Text>
+
             <Text style={styles.description}>{rowData.description}</Text>
             <Button
               title="Go to Course"
@@ -79,10 +83,14 @@ const styles = StyleSheet.create({
     paddingTop: 10
   },
   header: {
-    fontSize: 30,
+    fontSize: 24,
     textAlign: 'center'
   },
   description: {
     marginBottom: 10
+  },
+  author: {
+    color: 'grey',
+    fontStyle: 'italic'
   }
 })

@@ -27,7 +27,7 @@ export default class GraphQLCourses extends Component {
   static navigationOptions = {
     tabBarLabel: 'GraphQL',
     tabBarIcon: ({ tintColor }) => {
-      return <Icon name="line-graph" type="entypo" size={20} color={tintColor} />;
+      return <Icon name="network" type="entypo" size={20} color={tintColor} />;
     }
   }
 
@@ -52,6 +52,7 @@ export default class GraphQLCourses extends Component {
         renderRow={(rowData) =>
           <Card title={rowData.title}
                 image={{ uri: rowData.image }}>
+            <Text style={styles.author}>By {rowData.author}</Text>
             <Text style={styles.description}>{rowData.description}</Text>
             <Button
               title="Go to Course"
@@ -79,10 +80,14 @@ const styles = StyleSheet.create({
     paddingTop: 10
   },
   header: {
-    fontSize: 30,
+    fontSize: 24,
     textAlign: 'center'
   },
   description: {
     marginBottom: 10
+  },
+  author: {
+    color: 'grey',
+    fontStyle: 'italic'
   }
 })
