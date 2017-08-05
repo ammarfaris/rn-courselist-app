@@ -18,7 +18,7 @@ const toInclude = new Set(['native'])
 const rnList = data.filter(obj => toInclude.has(obj.category))
 
 // our dataSource for ListView, if rowHasChanged will update dynamically
-const dataSource = ds.cloneWithRows(rnList);
+const dataSource = ds.cloneWithRows(rnList)
 
 export default class ReactNativeCourses extends Component {
   render() {

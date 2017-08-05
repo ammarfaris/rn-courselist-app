@@ -5,6 +5,7 @@ import {
   View,
   ListView
 } from 'react-native'
+import { Card, Button } from 'react-native-elements'
 
 import data from '../data/courses.json'
 
@@ -18,7 +19,7 @@ const toInclude = new Set(['react'])
 const reactList = data.filter(obj => toInclude.has(obj.category))
 
 // our dataSource for ListView, if rowHasChanged will update dynamically
-const dataSource = ds.cloneWithRows(reactList);
+const dataSource = ds.cloneWithRows(reactList)
 
 export default class ReactCourses extends Component {
   render() {
@@ -28,7 +29,16 @@ export default class ReactCourses extends Component {
         <ListView
           dataSource={dataSource}
           renderRow={(rowData) =>
-            <Text>{rowData.title}</Text>
+            <Card title={rowData.title}>
+              <View style={styles.description}>
+                <Text>{rowData.description}</Text>
+              </View>
+              <Button
+                title="Go to Course"
+                icon={{ name: 'my-location' }}
+                backgroundColor="#03A9F4"
+              />
+            </Card>
           }
         >
         </ListView>
@@ -40,10 +50,13 @@ export default class ReactCourses extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'grey',
+    backgroundColor: 'snow',
     paddingTop: 10
   },
   header: {
     fontSize: 30
+  },
+  description: {
+    marginBottom: 10
   }
 })
