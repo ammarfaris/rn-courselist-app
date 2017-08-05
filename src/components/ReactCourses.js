@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import {
   StyleSheet,
   Text,
-  View,
-  ListView
+  ListView,
+  Image
 } from 'react-native'
 import { Card, Button } from 'react-native-elements'
 
@@ -24,25 +24,25 @@ const dataSource = ds.cloneWithRows(reactList)
 export default class ReactCourses extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.header}>React Courses</Text>
-        <ListView
-          dataSource={dataSource}
-          renderRow={(rowData) =>
-            <Card title={rowData.title}>
-              <View style={styles.description}>
-                <Text>{rowData.description}</Text>
-              </View>
-              <Button
-                title="Go to Course"
-                icon={{ name: 'my-location' }}
-                backgroundColor="#03A9F4"
-              />
-            </Card>
-          }
-        >
-        </ListView>
-      </View>
+      <ListView
+        style={styles.container}
+        dataSource={dataSource}
+        renderRow={(rowData) =>
+          <Card title={rowData.title}
+                image={{ uri: rowData.image }}>
+            <Text style={styles.description}>{rowData.description}</Text>
+            <Button
+              title="Go to Course"
+              icon={{ name: 'my-location' }}
+              backgroundColor="#03A9F4"
+            />
+          </Card>
+        }
+        renderHeader={() => (
+          <Text style={styles.header}>React Courses</Text>
+        )}
+      >
+      </ListView>
     )
   }
 }
@@ -54,7 +54,8 @@ const styles = StyleSheet.create({
     paddingTop: 10
   },
   header: {
-    fontSize: 30
+    fontSize: 30,
+    textAlign: 'center'
   },
   description: {
     marginBottom: 10
