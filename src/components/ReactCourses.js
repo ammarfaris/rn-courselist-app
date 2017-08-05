@@ -6,7 +6,7 @@ import {
   Image,
   Linking
 } from 'react-native'
-import { Card, Button } from 'react-native-elements'
+import { Card, Button, Icon } from 'react-native-elements'
 
 import data from '../data/courses.json'
 
@@ -24,6 +24,12 @@ const dataSource = ds.cloneWithRows(reactList)
 
 
 export default class ReactCourses extends Component {
+  static navigationOptions = {
+    tabBarLabel: 'React',
+    tabBarIcon: ({ tintColor }) => {
+      return <Icon name="rocket" type="entypo" size={20} color={tintColor} />;
+    }
+  }
 
   handleClick = (link) => {
     // Linking allow us to open link in default browser for the device

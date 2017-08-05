@@ -6,12 +6,12 @@ import {
   Image,
   Linking
 } from 'react-native'
-import { Card, Button } from 'react-native-elements'
+import { Card, Button, Icon } from 'react-native-elements'
 
 import data from '../data/courses.json'
 
 // ListView take all the data, create a list AND updates dynamically
-const ds = new ListView.DataSource({
+const dsRN = new ListView.DataSource({
   rowHasChanged: (r1, r2) => r1 !== r2 // callback fn returns TRUE when the row has changed
 })
 
@@ -20,10 +20,16 @@ const toInclude = new Set(['native'])
 const rnList = data.filter(obj => toInclude.has(obj.category))
 
 // our dataSource for ListView, if rowHasChanged will update dynamically
-const dataSource = ds.cloneWithRows(rnList)
+const dataSource = dsRN.cloneWithRows(rnList)
 
 
 export default class ReactNativeCourses extends Component {
+  static navigationOptions = {
+    tabBarLabel: 'React Native',
+    tabBarIcon: ({ tintColor }) => {
+      return <Icon name="tablet" type="entypo" size={20} color={tintColor} />;
+    }
+  }
 
   handleClick = (link) => {
     // Linking allow us to open link in default browser for the device

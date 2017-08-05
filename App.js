@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, View } from 'react-native'
+import { StyleSheet, View, Platform } from 'react-native'
 import { TabNavigator } from 'react-navigation'
 
 import ReactCourses from './src/components/ReactCourses'
@@ -12,7 +12,19 @@ export default class App extends Component {
       ReactCourses: { screen: ReactCourses },
       ReactNativeCourses : { screen: ReactNativeCourses }
     }, {
-      tabBarPosition: 'bottom'
+      tabBarPosition: 'bottom',
+      tabBarOptions: {
+        showIcon: true,
+        labelStyle: { fontSize: 9, margin: 0, padding: 0 },
+        iconStyle: {
+          width: 20,
+          height: 20,
+          marginBottom: 5
+        },
+        tabStyle: { height: 50 },
+        indicatorStyle: { backgroundColor: 'white' },
+        style: { backgroundColor: Platform.OS === 'android' ? 'purple' : 'transparent' }
+      }
     })
 
     return (
