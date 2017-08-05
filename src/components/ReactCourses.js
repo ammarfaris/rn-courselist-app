@@ -3,7 +3,8 @@ import {
   StyleSheet,
   Text,
   ListView,
-  Image
+  Image,
+  Linking
 } from 'react-native'
 import { Card, Button } from 'react-native-elements'
 
@@ -21,7 +22,23 @@ const reactList = data.filter(obj => toInclude.has(obj.category))
 // our dataSource for ListView, if rowHasChanged will update dynamically
 const dataSource = ds.cloneWithRows(reactList)
 
+
+
 export default class ReactCourses extends Component {
+
+  handleClick = (link) => {
+    // Linking allow us to open link in default browser for the device
+    // canOpenURL returns a Promise
+    Linking.canOpenURL(link)
+      .then(supported => {
+        if(supported) {
+          Linking.openURL(link)
+        } else {
+          console.log("Don't quite know how to open URL: " + link)
+        }
+      })
+  }
+
   render() {
     return (
       <ListView
@@ -35,6 +52,9 @@ export default class ReactCourses extends Component {
               title="Go to Course"
               icon={{ name: 'my-location' }}
               backgroundColor="#03A9F4"
+              onPress={() => {
+                this.handleClick(rowData.link)
+              }}
             />
           </Card>
         }
