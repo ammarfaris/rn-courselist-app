@@ -11,7 +11,7 @@
   {
     "id": 2,
     "title": "React.js Essential Training",
-    "category": "native",
+    "category": "react",
     "description": "Among all other JavaScript libraries, React.js stands out. It relies on reusable components, not templates, for UI development, allowing developers to render views where data changes over time. React applications are more scalable and more maintainable, making developers more efficient and users more satisfied.",
     "link": "https://www.lynda.com/React-js-tutorials/React-js-Essential-Training/496905-2.html?srchtrk=index%3a2%0alinktypeid%3a2%0aq%3aReact%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
     "release_date": "12/24/2016",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "title": "Learn React.js: The Basics",
-    "category": "native",
+    "category": "react",
     "description": "A new JavaScript library has arrived: React.js. React.js is designed to make the process of building modular, reusable user interface components simple and intuitive. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes",
     "link": "https://www.lynda.com/React-js-tutorials/Learn-React-js-Basics/519668-2.html?srchtrk=index%3a3%0alinktypeid%3a2%0aq%3aReact%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
     "release_date": "09/27/2016",
@@ -65,7 +65,7 @@
   {
     "id": 8,
     "title": "Learning Redux",
-    "category": "native",
+    "category": "react",
     "description": "Redux is a JavaScript library for managing client data in apps. You can use Redux together with React or with any other view library. Inspired by Flux, Redux attempts to make state mutations predictable by imposing certain restrictions on how and when updates can happen. ",
     "link": "https://www.lynda.com/React-js-tutorials/Learning-Redux/540345-2.html?srchtrk=index%3a9%0alinktypeid%3a2%0aq%3aReact%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
     "release_date": "12/23/2016",
