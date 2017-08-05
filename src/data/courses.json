@@ -1,83 +1,163 @@
 [
   {
     "id": 1,
-    "title": "Building an App with ReactJS and MeteorJS",
+    "title": "React: Testing and Debugging",
     "category": "react",
-    "description": "Meteor and React are a powerhouse combination. Meteor gives you a fast, easy-to-use solution for data management across clients and servers, and React gives you a way to structure your app's UI from reusable components. The combination allows you to create your dream apps: dynamic, data driven, and cross-platform.",
+    "author": "Emmanuel Henri",
+    "description": "Learn how to test, debug, and optimize your React code with tools like Jest, Chrome, ESLint, and flow.",
+    "link": "https://www.lynda.com/React-js-tutorials/React-Testing-Debugging/592511-2.html",
+    "release_date": "07/05/2017",
+    "image": "https://cdn.lynda.com/course/592511/592511-636337370114249042-16x9.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Building and Deploying a Full-Stack React Application",
+    "category": "react",
+    "author": "Carl Peaslee",
+    "description": "Discover how to architect, create, and deploy a scalable, full-stack React application.",
+    "link": "https://www.lynda.com/React-js-tutorials/Building-Deploying-Full-Stack-React-Application/558648-2.html",
+    "release_date": "07/07/2017",
+    "update_date": "06/26/2019",
+    "image": "https://cdn.lynda.com/course/558648/558648-636270705221442979-16x9.jpg"
+  },
+  {
+    "id": 3,
+    "title": "React: Ecosystems",
+    "category": "react",
+    "author": "Emmanuel Henri",
+    "description": "Learn how to make full use of React by exploring its ecosystems, and investigating what React offers as the nucleus of this system.",
+    "link": "https://www.lynda.com/React-js-tutorials/Next-steps/601831/628089-4.html",
+    "release_date": "06/15/2017",
+    "image": "https://cdn.lynda.com/course/601831/601831-636329621340157646-16x9.jpg"
+  },
+  {
+    "id": 4,
+    "title": "React.js Essential Training",
+    "category": "react",
+    "author": "Eve Porcello",
+    "description": "React is a great choice for dynamic, data-driven user experiences. Learn how to create browser-based apps and websites with the component-based React.js library.",
+    "link": "https://www.lynda.com/React-js-tutorials/React-js-Essential-Training/496905-2.html",
+    "release_date": "12/24/2016",
+    "image": "https://cdn.lynda.com/course/496905/496905-636178336143345335-16x9.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Learning Redux",
+    "category": "react",
+    "author": "Alex Banks",
+    "description": "Explore Redux, the JavaScript library for managing client data, and learn how to build a data layer for an interface made of React components.",
+    "link": "https://www.lynda.com/React-js-tutorials/Learning-Redux/540345-2.html",
+    "release_date": "12/23/2016",
+    "image": "https://cdn.lynda.com/course/540345/540345-636178326778026710-16x9.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Building an App with React.js and MeteorJS",
+    "category": "react",
+    "author": "Emmanuel Henri",
+    "description": "Looking for a new programming project? Learn how to build a data-driven, cross-platform app with the data management capabilities and reusable UI components in MeteorJS...",
     "link": "https://www.lynda.com/React-js-tutorials/Building-App-React-js-MeteorJS/533228-2.html",
     "release_date": "12/21/2016",
     "image": "https://cdn.lynda.com/course/533228/533228-636179098122239600-16x9.jpg"
   },
   {
-    "id": 2,
-    "title": "React.js Essential Training",
+    "id": 7,
+    "title": "Learning Full-Stack JavaScript Development: MongoDB, Node, and React",
     "category": "react",
-    "description": "Among all other JavaScript libraries, React.js stands out. It relies on reusable components, not templates, for UI development, allowing developers to render views where data changes over time. React applications are more scalable and more maintainable, making developers more efficient and users more satisfied.",
-    "link": "https://www.lynda.com/React-js-tutorials/React-js-Essential-Training/496905-2.html?srchtrk=index%3a2%0alinktypeid%3a2%0aq%3aReact%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
-    "release_date": "12/24/2016",
-    "image": "https://cdn.lynda.com/course/496905/496905-636178336143345335-16x9.jpg"
-  },
-  {
-    "id": 3,
-    "title": "React.js Essential Training",
-    "category": "react",
-    "description": "Among all other JavaScript libraries, React.js stands out. It relies on reusable components, not templates, for UI development, allowing developers to render views where data changes over time. React applications are more scalable and more maintainable, making developers more efficient and users more satisfied.",
-    "link": "https://www.lynda.com/React-js-tutorials/React-js-Essential-Training/496905-2.html?srchtrk=index%3a2%0alinktypeid%3a2%0aq%3aReact%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
-    "release_date": "12/24/2016",
-    "image": "https://cdn.lynda.com/course/496905/496905-636178336143345335-16x9.jpg"
-  },
-  {
-    "id": 4,
-    "title": "Learn React.js: The Basics",
-    "category": "react",
-    "description": "A new JavaScript library has arrived: React.js. React.js is designed to make the process of building modular, reusable user interface components simple and intuitive. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes",
-    "link": "https://www.lynda.com/React-js-tutorials/Learn-React-js-Basics/519668-2.html?srchtrk=index%3a3%0alinktypeid%3a2%0aq%3aReact%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
-    "release_date": "09/27/2016",
-    "image": "https://cdn.lynda.com/course/519668/519668-636102350243535480-16x9.jpg"
-  },
-  {
-    "id": 5,
-    "title": "Learn React.js: The Basics",
-    "category": "react",
-    "description": "A new JavaScript library has arrived: React.js. React.js is designed to make the process of building modular, reusable user interface components simple and intuitive. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes",
-    "link": "https://www.lynda.com/React-js-tutorials/Learn-React-js-Basics/519668-2.html?srchtrk=index%3a3%0alinktypeid%3a2%0aq%3aReact%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
-    "release_date": "09/27/2016",
-    "image": "https://cdn.lynda.com/course/519668/519668-636102350243535480-16x9.jpg"
-  },
-  {
-    "id": 6,
-    "title": "React Native: Building Mobile Apps",
-    "category": "native",
-    "description": "React Native is almost ready for primetime. In fact, companies like Facebook are already using it to create native mobile apps—with native performance—for a variety of platforms. You too can harness the power of React Native to build your own native projects, using JavaScript and the familiar React.js framework.",
-    "link": "https://www.lynda.com/React-Native-tutorials/React-Native-Building-Mobile-Apps/547379-2.html?srchtrk=index%3a2%0alinktypeid%3a2%0aq%3aReact%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
-    "release_date": "01/24/2017",
-    "image": "https://cdn.lynda.com/course/547379/547379-636205141682828443-16x9.jpg"
+    "author": "Samer Buna",
+    "description": "Learn by doing! Learn full-stack JavaScript development by building a web application with MongoDB, Node.js, and React.js, in this hands-on JavaScript programming course.",
+    "link": "https://www.lynda.com/Express-js-tutorials/Learning-Full-Stack-JavaScript-Development-MongoDB-Node-React/533304-2.html",
+    "release_date": "11/23/2016",
+    "image": "https://cdn.lynda.com/course/533304/533304-636161953119251395-16x9.jpg"
   },
   {
     "id": 7,
-    "title": "Learning Redux",
+    "title": "Learning React.js",
     "category": "react",
-    "description": "Redux is a JavaScript library for managing client data in apps. You can use Redux together with React or with any other view library. Inspired by Flux, Redux attempts to make state mutations predictable by imposing certain restrictions on how and when updates can happen. ",
-    "link": "https://www.lynda.com/React-js-tutorials/Learning-Redux/540345-2.html?srchtrk=index%3a9%0alinktypeid%3a2%0aq%3aReact%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
-    "release_date": "12/23/2016",
-    "image": "https://cdn.lynda.com/course/540345/540345-636178326778026710-16x9.jpg"
+    "author": "Eve Porcello",
+    "description": "Learn React.js. Get started building reusable user interface components with React, the JavaScript framework for UI developers.",
+    "link": "https://www.lynda.com/React-js-tutorials/Learn-React-js-Basics/519668-2.html",
+    "release_date": "9/27/2016",
+    "image": "https://cdn.lynda.com/course/519668/519668-636355602204181698-16x9.jpg"
   },
   {
     "id": 8,
-    "title": "Learning Redux",
+    "title": "Building a Web Interface with React.js",
     "category": "react",
-    "description": "Redux is a JavaScript library for managing client data in apps. You can use Redux together with React or with any other view library. Inspired by Flux, Redux attempts to make state mutations predictable by imposing certain restrictions on how and when updates can happen. ",
-    "link": "https://www.lynda.com/React-js-tutorials/Learning-Redux/540345-2.html?srchtrk=index%3a9%0alinktypeid%3a2%0aq%3aReact%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
-    "release_date": "12/23/2016",
-    "image": "https://cdn.lynda.com/course/540345/540345-636178326778026710-16x9.jpg"
+    "author": "Ray Villalobos",
+    "description": "Learn how to create flexible, fast, and lightweight web interfaces, including web forms, with React.js.",
+    "link": "https://www.lynda.com/React-js-tutorials/Building-Web-Interface-React-js/495271-2.html",
+    "release_date": "7/26/2016",
+    "image": "https://cdn.lynda.com/course/495271/495271-636051283523699944-16x9.jpg"
   },
   {
     "id": 9,
-    "title": "Building a Web Interface with React.js",
-    "category": "react",
-    "description": "React is a JavaScript library for creating user interfaces that display dynamic data. Because of its reusable components and unique data rendering approach, the web interfaces you create with React are flexible, fast, and lightweight.",
-    "link": "https://www.lynda.com/React-js-tutorials/Building-Web-Interface-React-js/495271-2.html?srchtrk=index%3a4%0alinktypeid%3a2%0aq%3aReact%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2",
-    "release_date": "07/26/2016",
-    "image": "https://cdn.lynda.com/course/495271/495271-636051283523699944-16x9.jpg"
-  }
+    "title": "Create a CRM Mobile Application with React Native",
+    "category": "native",
+    "author": "Emmanuel Henri",
+    "description": "Learn how to develop a CRM (customer relationship management) mobile app using React Native. This course shows how to set up a project, code the login...",
+    "link": "https://www.lynda.com/Web-tutorials/Create-CRM-Mobile-Application-React-Native/585274-2.html",
+    "release_date": "5/22/2017",
+    "image": "https://cdn.lynda.com/course/585274/585274-636307180527939107-16x9.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Learning React Native",
+    "category": "native",
+    "author": "Alex Banks",
+    "description": "Learn how to build apps in JavaScript using React Native. This course shows how to set up and run an app, work with components and views, leverage platform...",
+    "link": "https://www.lynda.com/React-js-tutorials/Learning-React-Native/577374-2.html",
+    "release_date": "5/2/2017",
+    "image": "https://cdn.lynda.com/course/577374/577374-636292473534819542-16x9.jpg"
+  },
+  {
+    "id": 11,
+    "title": "From React to React Native",
+    "category": "native",
+    "author": "Emmanuel Henri",
+    "description": "Explore the different components that make up a basic React Native application, and learn how to use this platform to build your own native iOS and Android apps.",
+    "link": "https://www.lynda.com/React-Native-tutorials/From-React-React-Native/577371-2.html",
+    "release_date": "4/11/2017",
+    "image": "https://cdn.lynda.com/course/577371/577371-636271681889296588-16x9.jpg"
+  },
+  {
+    "id": 12,
+    "title": "React Native: Building Mobile Apps",
+    "category": "native",
+    "author": "Steven Emmerich",
+    "description": "Create native mobile apps—with native performance—using React Native, Firebase, and MobX.",
+    "link": "https://www.lynda.com/React-Native-tutorials/React-Native-Building-Mobile-Apps/547379-2.html",
+    "release_date": "1/24/2017",
+    "image": "https://cdn.lynda.com/course/547379/547379-636205141682828443-16x9.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Building Material Design Apps on Android with React Native",
+    "category": "native",
+    "author": "Linton Ye",
+    "description": "Go through real examples of using React Native to build interfaces for Android apps that follow material design principles.",
+    "link": "https://www.lynda.com/Android-tutorials/Building-Material-Design-Apps-Android-React-Native/585242-2.html",
+    "release_date": "6/19/2017",
+    "image": "https://cdn.lynda.com/course/585242/585242-636331363230177573-16x9.jpg"
+  },
+  {
+    "id": 14,
+    "title": "GraphQL: Data Fetching with Relay",
+    "category": "graphql",
+    "author": "Emmanuel Henri",
+    "description": "Streamline data retrieval in your React.js applications. Learn how to build a GraphQL server and use Relay to fetch data from React components.",
+    "link": "https://www.lynda.com/GraphQL-tutorials/GraphQL-Data-Fetching-Relay/595829-2.html",
+    "release_date": "8/3/2017",
+    "image": "https://cdn.lynda.com/course/595829/595829-636371810978940141-16x9.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Learning GraphQL",
+    "category": "graphql",
+    "author": "Eve Porcello",
+    "description": "Learn how to get started with GraphQL, the popular query language designed to make data fetching and updating easier.",
+    "link": "https://www.lynda.com/JavaScript-tutorials/Learning-GraphQL/574714-2.html",
+    "release_date": "4/18/2017",
+    "image": "https://cdn.lynda.com/course/574714/574714-636277687759506295-16x9.jpg"
+  },
 ]
