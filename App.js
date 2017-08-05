@@ -11,6 +11,8 @@ export default class App extends Component {
     const MainNavigator = TabNavigator({
       ReactCourses: { screen: ReactCourses },
       ReactNativeCourses : { screen: ReactNativeCourses }
+    }, {
+      tabBarPosition: 'bottom'
     })
 
     return (
