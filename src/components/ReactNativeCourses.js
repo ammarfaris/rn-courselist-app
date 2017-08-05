@@ -2,9 +2,11 @@ import React, { Component } from 'react'
 import {
   StyleSheet,
   Text,
-  View,
-  ListView
+  ListView,
+  Image,
+  Linking
 } from 'react-native'
+import { Card, Button } from 'react-native-elements'
 
 import data from '../data/courses.json'
 
@@ -20,19 +22,46 @@ const rnList = data.filter(obj => toInclude.has(obj.category))
 // our dataSource for ListView, if rowHasChanged will update dynamically
 const dataSource = ds.cloneWithRows(rnList)
 
+
 export default class ReactNativeCourses extends Component {
+
+  handleClick = (link) => {
+    // Linking allow us to open link in default browser for the device
+    // canOpenURL returns a Promise
+    Linking.canOpenURL(link)
+      .then(supported => {
+        if(supported) {
+          Linking.openURL(link)
+        } else {
+          console.log("Don't quite know how to open URL: " + link)
+        }
+      })
+  }
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.header}>React Native Courses</Text>
-        <ListView
-          dataSource={dataSource}
-          renderRow={(rowData) =>
-            <Text>{rowData.title}</Text>
-          }
-        >
-        </ListView>
-      </View>
+      <ListView
+        style={styles.container}
+        dataSource={dataSource}
+        renderRow={(rowData) =>
+          <Card title={rowData.title}
+                image={{ uri: rowData.image }}>
+            <Text style={styles.description}>{rowData.description}</Text>
+            <Button
+              title="Go to Course"
+              icon={{ name: 'my-location' }}
+              backgroundColor="#03A9F4"
+              onPress={() => {
+                this.handleClick(rowData.link)
+              }}
+            />
+          </Card>
+        }
+        renderHeader={() => (
+          <Text style={styles.header}>React Native Courses</Text>
+        )}
+      >
+      </ListView>
     )
   }
 }
@@ -44,6 +73,10 @@ const styles = StyleSheet.create({
     paddingTop: 10
   },
   header: {
-    fontSize: 30
+    fontSize: 30,
+    textAlign: 'center'
+  },
+  description: {
+    marginBottom: 10
   }
 })

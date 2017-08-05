@@ -23,7 +23,6 @@ const reactList = data.filter(obj => toInclude.has(obj.category))
 const dataSource = ds.cloneWithRows(reactList)
 
 
-
 export default class ReactCourses extends Component {
 
   handleClick = (link) => {
